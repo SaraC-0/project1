@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "titolo": "Il Signore degli Anelli",
+    "autore": "J.R.R. Tolkien",
+    "categoria": "Letteratura Fantasy",
+    "descrizione": "Celebre saga fantasy epica scritta da J.R.R. Tolkien, ambientata nella Terra di Mezzo alla fine della Terza Era"
+  },
+  {
+    "id": 2,
+    "titolo": "Harry Potter",
+    "autore": "J.K. Rowling",
+    "categoria": "Letteratura Fantasy",
+    "descrizione": "Celebre saga fantasy che segue le avventure di un mago orfano"
+  },
+  {
+    "id": 3,
+    "titolo": "La Teoria del Tutto",
+    "autore": "Stephen Hawking",
+    "categoria": "Divulgazione scientifica",
+    "descrizione": "La storia delle teorie cosmologiche da Aristotele ad Einstein"
+  }
+]
