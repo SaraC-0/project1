@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "titolo": "Il Signore degli Anelli",
-    "autore": "J.R.R. Tolkien",
-    "categoria": "Letteratura Fantasy",
+    "titolo": "Il Signore degli Anelli - La compagnia dell'Anello",
+    "regista": "Peter Jackson",
+    "categoria": "Fantasy",
     "descrizione": "Celebre saga fantasy epica scritta da J.R.R. Tolkien, ambientata nella Terra di Mezzo alla fine della Terza Era"
   },
   {
     "id": 2,
-    "titolo": "Harry Potter",
-    "autore": "J.K. Rowling",
-    "categoria": "Letteratura Fantasy",
+    "titolo": "Harry Potter - La pietra filosofale",
+    "regista": "Chris Columbus",
+    "categoria": "Fantasy",
     "descrizione": "Celebre saga fantasy che segue le avventure di un mago orfano"
   },
   {
     "id": 3,
-    "titolo": "La Teoria del Tutto",
-    "autore": "Stephen Hawking",
-    "categoria": "Divulgazione scientifica",
-    "descrizione": "La storia delle teorie cosmologiche da Aristotele ad Einstein"
+    "titolo": "Lo Hobbit - Un viaggio inaspettato",
+    "regista": "Peter Jackson",
+    "categoria": "Fantasy",
+    "descrizione": "Viaggio e avventure di un hobbit"
   }
 ]
