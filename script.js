@@ -36,13 +36,16 @@ function apriDettaglio(filmAttuale) {
   dettaglio.innerHTML = ""; //svuoto il div 'dettaglio' per evitare di aggiungere testi all'infinito.
   let info = document.createElement("p");
   info.innerHTML =
-    "<b>" +
+    "<ul>" +
+    "<li> <b>" +
     filmAttuale.regista +
-    "</b>" +
-    "<br>" +
+    "</b> </li>" +
+    "<li>" +
     filmAttuale.categoria +
-    "<br>" +
-    filmAttuale.descrizione;
+    "</li>" +
+    "<li>" +
+    filmAttuale.descrizione +
+    "</li>";
 
   dettaglio.appendChild(info);
   dettaglio.style.display = "block";
