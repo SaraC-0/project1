@@ -1,10 +1,53 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
-    <link rel="stylesheet" href="page2style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Film</title>
+    <link rel="stylesheet" href="page2style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <h1>Film</h1>
+
+      <button id="openModal" class="btn">Aggiungi Film</button>
+      <button id="openModal1" class="btn">Lista Film Completa</button>
+
+      <!-- CARD FILM -->
+      <div id="movie-list" class="movie-list"></div>
+
+      <!-- LISTA FILM -->
+      <section>
+        <ul id="lista-film"></ul>
+      </section>
+    </div>
+
+    <!-- MODALE -->
+    <div id="modal" class="modal">
+      <div class="modal-box">
+        <h2>Aggiungi Film</h2>
+
+        <form id="movieForm">
+          <label for="title">Titolo</label>
+          <input type="text" id="title" required />
+
+          <label for="director">Regista</label>
+          <input type="text" id="director" required />
+
+          <label for="category">Categoria</label>
+          <input type="text" id="category" required />
+
+          <div class="modal-buttons">
+            <button type="submit" class="btn">Salva</button>
+            <button type="button" id="closeModal" class="btn cancel">
+              Annulla
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="backend.js"></script>
+  </body>
 </html>
