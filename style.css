@@ -1,3 +1,98 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(203, 186, 214);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* SEZIONE PRINCIPALE */
+.sezione-principale {
+  margin-top: 60px;
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #4b0082;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #4b0082;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+ul li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+  line-height: 1.5;
+}
+
+ul li::marker {
+  color: #8e44ad;
+}
+
+/* DETTAGLIO FILM */
+#dettaglio {
+  margin-top: 20px;
+  border: 1px solid black;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  box-shadow: rgb(233, 103, 247) 2px 2px 10px;
+}
+
+/* SEZIONE BOTTONI */
+.sezione-bottoni {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.sezione-bottoni button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #8e44ad, #c39bd3);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sezione-bottoni button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #c39bd3, #8e44ad);
+}
+
+/* LISTA OL E LI */
 ol li {
   margin-bottom: 10px;
 }
@@ -7,83 +102,36 @@ li:hover {
   text-decoration: underline;
 }
 
-#dettaglio {
-  margin-top: 30px;
-  border: solid black 1px;
-  width: 300px;
-  padding: 30px;
-  box-shadow: rgb(233, 103, 247) 2px 2px 10px;
-}
-
 .selezionato {
   text-decoration: underline;
 }
 
-body {
-  background-color: rgb(203, 186, 214);
-  margin: 0;
-  display: flex;
-  justify-content: center; /* centro orizzontale */
+/* RESPONSIVE */
 
-  height: 100vh;
-}
-.sezione-principale {
-  margin-top: 80px;
-}
-
-.sezione-bottoni {
-  display: flex;
-  flex-direction: row; /* disposizione orizzontale */
-  justify-content: center; /* centro orizzontale nella sezione */
-  align-items: center; /* centro verticale nella sezione */
-  height: 100vh; /* altezza della sezione = altezza finestra */
-  gap: 20px; /* spazio tra i bottoni */
-}
-.sezione-bottoni button {
-  margin-top: 500px; /* regola questo valore a piacere */
-  /* Stile generale dei bottoni */
-
-  padding: 10px 20px; /* più piccolo rispetto alla versione precedente */
-  font-size: 16px; /* testo leggermente più piccolo */
-  font-weight: 600;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #8e44ad, #c39bd3);
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* ombra più leggera */
-}
-.sezione-bottoni button:hover {
-  transform: translateY(-3px); /* leggero sollevamento */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(135deg, #c39bd3, #8e44ad);
-}
-.sezione-bottoni {
-  flex-direction: row !important;
+/* Tablet */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .sezione-bottoni button {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
 }
 
-h1 {
-  font-size: 60px; /* titolo grande */
-  font-weight: 700;
-  color: #4b0082; /* viola scuro elegante */
-}
-h2 {
-  font-size: 40px; /* testo grande per evidenziare */
-  font-weight: 600;
-  color: #4b0082; /* colore viola scuro */
-}
-ul {
-  list-style-type: disc; /* pallini standard */
-  padding-left: 40px; /* spazio a sinistra per i marker */
-  margin-top: 10px; /* distanza dal titolo */
-}
-ul li {
-  font-size: 18px; /* dimensione testo leggibile */
-  margin-bottom: 10px; /* spazio tra gli elementi */
-  color: #333; /* colore testo */
-  line-height: 1.5; /* altezza linea comoda da leggere */
-}
-ul li::marker {
-  color: #8e44ad; /* colore viola ai pallini */
+/* iPhone */
+@media (max-width: 390px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .sezione-bottoni button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }
