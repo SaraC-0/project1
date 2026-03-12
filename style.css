@@ -20,7 +20,7 @@ body {
   text-align: center;
   width: 90%;
   max-width: 700px;
-  min-height: 40vh; /* evita problemi su Android */
+  min-height: 40vh; /* spazio per la descrizione del film */
 }
 
 h1 {
@@ -68,11 +68,11 @@ ul li::marker {
 .sezione-bottoni {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* parte dall’alto */
   gap: 15px;
   flex-wrap: wrap;
-  margin: 30px 0;
-  min-height: 60vh; /* evita problemi su Android */
+  margin: 20px 0; /* meno spazio sopra e sotto */
+  padding-top: 10px; /* piccolo spazio sopra */
 }
 
 .sezione-bottoni button {
@@ -131,6 +131,10 @@ li:hover {
   }
   h2 {
     font-size: 20px;
+  }
+  .sezione-bottoni {
+    margin: 15px 0;
+    padding-top: 5px;
   }
   .sezione-bottoni button {
     font-size: 12px;
