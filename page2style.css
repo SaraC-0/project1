@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -7,30 +8,42 @@
 
 body {
   background: #f3e8ff;
+  min-height: 100vh;
 }
 
+/* CONTAINER */
 .container {
   max-width: 700px;
   margin: 40px auto;
   text-align: center;
 }
 
+/* TITOLI */
 h1 {
   color: #7e22ce;
-  margin-bottom: 25px;
-  font-size: 48px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #7e22ce;
+  margin-bottom: 15px;
+}
+
+/* BOTTONI */
 .btn {
-  padding: 12px 24px;
+  padding: 8px 16px;
   background-color: #7e22ce;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
-  margin: 10px;
-  font-size: 16px;
+  margin: 8px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -40,32 +53,32 @@ h1 {
   transform: scale(1.05);
 }
 
+/* MOVIE LIST */
 .movie-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
 }
 
-/* Card dei film */
 .movie-card {
   background: white;
-  width: 200px;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
 .movie-card h3 {
   color: #7e22ce;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+  font-size: 16px;
 }
 
 .movie-card p {
-  font-size: 14px;
+  font-size: 13px;
   color: #555;
-  margin-bottom: 0;
 }
 
 /* MODALE */
@@ -84,20 +97,20 @@ h1 {
 
 .modal-box {
   background: white;
-  width: 320px;
-  padding: 20px;
+  width: 90%;
+  max-width: 320px;
+  padding: 18px;
   border-radius: 10px;
-  position: relative;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 input {
-  padding: 8px;
+  padding: 6px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -115,8 +128,8 @@ input {
 .cancel:hover {
   background: #555;
 }
-/* LISTA FILM */
 
+/* LISTA FILM */
 #lista-film {
   list-style: none;
   padding: 0;
@@ -129,11 +142,51 @@ input {
 
 #lista-film li {
   background: white;
-  width: 220px;
-  padding: 10px;
+  width: 100%;
+  max-width: 220px;
+  padding: 8px;
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   font-weight: bold;
   color: #7e22ce;
   text-align: center;
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .btn {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+  .movie-card {
+    width: 45%;
+  }
+}
+
+/* iPhone */
+@media (max-width: 390px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .movie-card {
+    width: 90%;
+  }
+  #lista-film li {
+    width: 90%;
+  }
 }
